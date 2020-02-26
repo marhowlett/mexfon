@@ -7,6 +7,7 @@
 }
 
 
+
 body{
     margin: 0;
 }
@@ -216,9 +217,10 @@ a{
 }
 
 #packs, .paquetes{
-    padding-bottom: 120px;
+    padding-bottom: 40px;
     .contain{
         text-align: center;
+        
         
         h2{
             font-weight: 600;
@@ -568,17 +570,91 @@ i{
     
     
     #packs, .paquetes{
+        h2{
+            font-size: 36px !important;
+            
+        }
+        
+        h3{
+            font-size: 28px !important;
+     
+    
+        }
+        
+        h2, h3{
+            padding: 0 20px;
+           
+        }
         
         .contain{
+
+            width: auto !important;
+      
+            .swiper-container{
+                    position: relative;
+                     height: 100%;
+            }
+            
+        
+            
             .flex{
-                flex-flow: wrap;
-                .col{
-                    width: 100% !important;
-                    padding-bottom: 100px;
+                display: flex;
+                
+                
+                .swiper-slide{
+                    max-width: 1000px !important;
                 }
+                
+       
             }
         }
+        
+        
+        .swiper{
+            padding: 0 !important;
+            
+            .col{
+                margin: 0 !important;
+                
+                width: 100% !important;
+            }
+        }
+        
+        
+        
+               #p5{
+                    background-color: #530f5c !important;
+                    background: none;
+ 
+                    }
 
+               #p6{
+                            background-color: #fcb200 !important;
+                            background: url(../img/packs/6molcajete.png) right bottom no-repeat;
+
+                    }
+
+               #p7{
+                            background-color: #005450 !important;
+                            background: url(../img/packs/7piramide.png) center bottom no-repeat;
+
+                    }
+
+    }
+    
+    
+    #packs{
+        .contain{
+            padding: 0 !important;
+            
+            
+            .col{
+                width: 96% !important;
+            }
+        }
+        
+        
+        
     }
     
     
@@ -923,30 +999,89 @@ i{
 //responsive QS ---------------
 @media screen and (max-device-width:640px){
     
-#mainmenu-qs{
-    padding-bottom: 20px;
+#mainmenu-qs, #mainmenu{
+    padding-top: 30px;
+    padding-bottom: 50px;
+    display: flex;
+    .contain{
+        margin: auto;
+        padding: 0;
+        
+    }
+    
+    
 
     .flex{
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
     
-        
-        .col{
-            padding: 5px;
-            a{
-       
-                top: 0px;
-                
-            }
-            text-align: center;
+        .menu{
+            width: 20% !important;
+   
             
-            width: 100%;
         }
         
-            .logo{
-            width: 100%;
+        
+            .logo {
+                width: 100% !important;
+                img{
+                    //width: 100%;
+                }
+                
+                a{
+                    top: 0px;
+                    font-size: 16px;
+                }
         }
     }
 }
+    
+    
+    //mobile menu -----------------------------------
+
+
+
+.topnav {
+  overflow: hidden;
+  background-color: @green;
+  //position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 28px;
+  display: block;
+   
+}
+
+.topnav a.icon {
+  background: transparent;
+  //display: block;
+  position: absolute;
+  right: 0;
+  top: 20px;
+    font-size: 30px !important;
+}
+
+.topnav a:hover {
+  background-color: @pink;
+  color: black;
+}
+
+    #mainmenu{
+        .topnav {
+  
+          background-color: transparent;
+
+        }
+
+    }
+
     
     
     
@@ -1736,6 +1871,50 @@ i{
     
     
 }
+
+
+//slider paquetes
+
+.swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+
+
+
+#swiper-packs{
+    .contain, .swiper{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        padding: 0 0 !important;
+        width: 400px !important;
+        
+        .flex{
+            width: 80% !important;
+        }
+    }
+}
+
+
 
 
 
